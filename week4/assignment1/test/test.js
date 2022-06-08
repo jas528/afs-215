@@ -1,4 +1,4 @@
-const calculator=require("./calculator") 
+const calculator=require("../calculator") 
 const expect = require("chai").expect;
 
 it("calling calculator ", function () {
