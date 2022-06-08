@@ -25,7 +25,7 @@ module.exports= class User {
                 return this.num1.toString()
             }
             else{
-             return "Please enter a number!!!" 
+             return new Error ("Please enter a number!!!" )
             }
 
         }
