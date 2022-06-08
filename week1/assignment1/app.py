@@ -20,17 +20,19 @@ class List:
                 dict[property[0]]= property[1]
                 count=0
                 property=[]
-          
+        self.list.append(dict)         
+    def turnToTuple(self):
+        listToTuple=tuple(self.list)
+        self.list=listToTuple
                 
            
                 
-        self.list.append(dict)         
 datalist = List()
 datalist.addItem(1)
 datalist.addItem("Hello")
 datalist.addTuple(2, 4, "hello")
 datalist.addDictionary("firstItem","secondItem","thirdItem","forthItem","fifthItem","sixthItem")
-
+datalist.turnToTuple()
 print(datalist.list)
 # datalist.addDictionary(""){
 #   "brand": "Ford",
