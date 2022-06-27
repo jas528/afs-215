@@ -36,6 +36,18 @@ expect(cart.addNewItem('Shampoo')).to.deep.equals(['Combs','Brushes','Blowdryers
 
 })
 
-it('should......',() =>{
+it('should called the list......',() =>{
+    expect(cart.callItem()).to.deep.equals(['Combs','Brushes','Blowdryers'])
 
+})
+it('should return true if found......',() =>{
+    cart.addNewItem('Shampoo') 
+expect(cart.searchItem('Shampoo')).to.deep.equals(true)
+})
+it('should return false if not found......',() =>{
+    expect(cart.searchItem('Shampoo')).to.deep.equals(false)
+})
+
+it('should remove an item......',() =>{
+    expect(cart.removeItem('Combs')).to.deep.equals(['Brushes','Blowdryers'])
 })
