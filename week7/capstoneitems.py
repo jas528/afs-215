@@ -6,7 +6,9 @@
 #Remove a specific item from the list
 
 #created class
-class Items:
+class Orders:
 
     def __init__(self) -> None:
-        self.items =[]
+        self.orders =[]
+
+        def addOrders()

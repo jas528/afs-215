@@ -2,7 +2,7 @@
   "name": "week6",
   "version": "1.0.0",
   "description": "",
-  "main": "inventory.js",
+  "main": "todolist.js",
   "scripts": {
     "test": "mocha '**/*spec.js' --watch"
   },
